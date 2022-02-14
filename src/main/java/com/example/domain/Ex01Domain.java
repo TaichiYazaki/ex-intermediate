@@ -5,7 +5,7 @@ public class Ex01Domain {
 	private Integer id;
 	private String leagueName;
 	private String teamName;
-	private String headquaters;
+	private String headquarters;
 	private String inauguration;
 	private String history;
 	public Integer getId() {
@@ -26,11 +26,11 @@ public class Ex01Domain {
 	public void setTeamName(String teamName) {
 		this.teamName = teamName;
 	}
-	public String getHeadquaters() {
-		return headquaters;
+	public String getHeadquarters() {
+		return headquarters;
 	}
-	public void setHeadquaters(String headquaters) {
-		this.headquaters = headquaters;
+	public void setHeadquarters(String headquarters) {
+		this.headquarters = headquarters;
 	}
 	public String getInauguration() {
 		return inauguration;
@@ -46,8 +46,8 @@ public class Ex01Domain {
 	}
 	@Override
 	public String toString() {
-		return "Ex01Domain [id=" + id + ", leagueName=" + leagueName + ", teamName=" + teamName + ", headquaters="
-				+ headquaters + ", inauguration=" + inauguration + ", history=" + history + "]";
+		return "Ex01Domain [id=" + id + ", leagueName=" + leagueName + ", teamName=" + teamName + ", headquarters="
+				+ headquarters + ", inauguration=" + inauguration + ", history=" + history + "]";
 	}
 	
 }

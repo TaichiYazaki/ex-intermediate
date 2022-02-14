@@ -10,12 +10,13 @@
 	<h1>野球チーム一覧</h1>
 	<form th:action="@{/ex01/show1}" method="POST">
 
-		<span th:each="ex01:${ex01List}">
-			<a href="detail.html" th:href="@{/ex01/showDetail?id=}+${ex01.id}">
+
+		<a href="detail.html" th:href="@{/ex01/show2?id=}+${ex01.id}">
+			<span th:each="ex01:${ex01List}">
 				<span th:text="${ex01.teamName}">
 				</span><br>
-		</span>
-			</a>
+			</span>
+		</a>
 
 
 	</form>

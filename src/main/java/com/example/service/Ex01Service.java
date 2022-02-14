@@ -19,4 +19,8 @@ public class Ex01Service {
 	public List<Ex01Domain> show1(){
 		return ex01Repository.findAll();
 	}
+	
+	public Ex01Domain showDetail(Integer id) {
+		return ex01Repository.load(id);
+	}
 }

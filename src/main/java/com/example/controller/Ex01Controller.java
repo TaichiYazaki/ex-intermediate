@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.example.domain.Ex01Domain;
 import com.example.service.Ex01Service;
 
+
 @Controller
 @RequestMapping("/ex01")
 public class Ex01Controller {
@@ -22,5 +23,11 @@ public class Ex01Controller {
 		List<Ex01Domain> ex01List = ex01Service.show1();
 		model.addAttribute("ex01List", ex01List);
 		return "/ex01show";
+	}
+	@RequestMapping("/show2")
+	public String showDetail(Integer id, Model model) {
+		Ex01Domain ex01Domain = ex01Service.showDetail(id);
+		model.addAttribute("ex01Domain", ex01Domain);
+		return "ex01result";
 	}
 }
